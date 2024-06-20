@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-section {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .collage-section {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .collage-slider {
+            display: flex;
+            height: 100%;
+            animation: slide 20s linear infinite;
+        }
+
+        .collage-slider img {
+            height: 100%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        /* Desktop and Tablet View */
+        @media (min-width: 769px) {
+            .collage-slider {
+                animation: desktopSlide 20s linear infinite;
+            }
+
+            .collage-slider img {
+                height: 100vh;
+                width: auto;
+            }
+
+            @keyframes desktopSlide {
+                0% { transform: translateX(0); }
+                16.67% { transform: translateX(-100%); }
+                33.33% { transform: translateX(-200%); }
+                50% { transform: translateX(-300%); }
+                66.67% { transform: translateX(-400%); }
+                83.33% { transform: translateX(-500%); }
+                100% { transform: translateX(-600%); }
+            }
+        }
+
+        /* Mobile View */
+        @media (max-width: 768px) {
+            .collage-slider {
+                animation: slide 20s linear infinite;
+            }
+
+            @keyframes slide {
+                0% { transform: translateX(0); }
+                16.67% { transform: translateX(-100%); }
+                33.33% { transform: translateX(-200%); }
+                50% { transform: translateX(-300%); }
+                66.67% { transform: translateX(-400%); }
+                83.33% { transform: translateX(-500%); }
+                100% { transform: translateX(-600%); }
+            }
+
+            .text-section {
+                width: 80%;
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-section">
+            <h1>Aditya is Gay!</h1>
+            <p>Happy Birthday to the GAY. May his GAY not come in my WAY.</p>
+            <p>Want to feature his GAY pic? Text +19178603738</p>
+        </div>
+        <div class="collage-section">
+            <div class="collage-slider">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/lp_image_3.jpg" alt="Image 1">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/IMG_3525.jpg" alt="Image 6">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3428.JPG" alt="Image 3">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3484.jpg" alt="Image 4">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3501.JPG" alt="Image 5">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/GIF-2024-05-04-15-29-02.gif" alt="Image 2">
+                <!-- Duplicate images to ensure seamless loop -->
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/lp_image_3.jpg" alt="Image 1">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/IMG_3525.jpg" alt="Image 6">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3428.JPG" alt="Image 3">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3484.jpg" alt="Image 4">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3501.JPG" alt="Image 5">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/GIF-2024-05-04-15-29-02.gif" alt="Image 2">
+                <!-- Duplicate images to ensure seamless loop -->
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/lp_image_3.jpg" alt="Image 1">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/IMG_3525.jpg" alt="Image 6">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3428.JPG" alt="Image 3">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3484.jpg" alt="Image 4">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3501.JPG" alt="Image 5">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/GIF-2024-05-04-15-29-02.gif" alt="Image 2">
+                <!-- Duplicate images to ensure seamless loop -->
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/lp_image_3.jpg" alt="Image 1">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/IMG_3525.jpg" alt="Image 6">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3428.JPG" alt="Image 3">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3484.jpg" alt="Image 4">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3501.JPG" alt="Image 5">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/GIF-2024-05-04-15-29-02.gif" alt="Image 2">
+                <!-- Duplicate images to ensure seamless loop -->
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/lp_image_3.jpg" alt="Image 1">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/IMG_3525.jpg" alt="Image 6">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3428.JPG" alt="Image 3">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3484.jpg" alt="Image 4">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3501.JPG" alt="Image 5">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/GIF-2024-05-04-15-29-02.gif" alt="Image 2">
+                <!-- Duplicate images to ensure seamless loop -->
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/lp_image_3.jpg" alt="Image 1">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/IMG_3525.jpg" alt="Image 6">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3428.JPG" alt="Image 3">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3484.jpg" alt="Image 4">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3501.JPG" alt="Image 5">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/GIF-2024-05-04-15-29-02.gif" alt="Image 2">
+                <!-- Duplicate images to ensure seamless loop -->
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/lp_image_3.jpg" alt="Image 1">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/IMG_3525.jpg" alt="Image 6">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3428.JPG" alt="Image 3">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3484.jpg" alt="Image 4">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/IMG_3501.JPG" alt="Image 5">
+                <img src="https://raw.githubusercontent.com/RohitGanji/Aditya/main/images/GIF-2024-05-04-15-29-02.gif" alt="Image 2">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
